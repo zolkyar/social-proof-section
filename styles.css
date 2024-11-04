@@ -14,9 +14,9 @@ body {
 
 main {
   position: relative;
-  width: 86%;
-  height: 86vh;
-  padding: 7vh 7%;
+  width: 82%;
+  height: 72vh;
+  padding: 14vh 9%;
   background-color: hsl(300, 24%, 96%);
   display: grid;
   grid-template-columns: 50% 50%;
@@ -26,6 +26,22 @@ main {
 .paragraph {
   grid-row: span 1;
   grid-column: span 1;
+}
+
+.paragraph h1 {
+  width: 400px;
+  font-weight: 700;
+  font-size: 50px;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 15px;
+}
+
+.paragraph p {
+  width: 400px;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(300, 43%, 22%);
+  line-height: 1.2;
 }
 
 .rates {
