@@ -17,7 +17,7 @@ main {
   width: 82%;
   height: 72vh;
   padding: 14vh 9%;
-  background-color: hsl(300, 24%, 96%);
+  background-color: white;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 48% 48% 4%;
@@ -39,14 +39,54 @@ main {
 .paragraph p {
   width: 400px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   color: hsl(300, 43%, 22%);
   line-height: 1.2;
+  text-align: justify;
 }
 
 .rates {
   grid-row: span 1;
   grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 15px;
+  color: hsl(300, 43%, 22%);
+}
+
+.rating {
+  align-items: center;
+  width: 450px;
+  height: 20px;
+  background-color: hsl(300, 24%, 96%);
+  padding: 20px 30px;
+  margin-bottom: 15px;
+}
+
+.r1 {
+  align-self: first baseline;
+}
+
+.r2 {
+  align-self: center;
+}
+
+.r3 {
+  align-self: last baseline;
+}
+
+.stars {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.stars img{
+  margin-right: 5px;
+}
+
+.rates p {
+  display: inline-block;
 }
 
 .reviews {
