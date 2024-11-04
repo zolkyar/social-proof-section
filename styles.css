@@ -1,7 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  position: relative;
+  width: 86%;
+  height: 86vh;
+  padding: 7vh 7%;
+  background-color: hsl(300, 24%, 96%);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 48% 48% 4%;
+}
+
+.paragraph {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.rates {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.reviews {
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
 .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+  grid-row: span 1;
+  grid-column: span 2;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
