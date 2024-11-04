@@ -15,12 +15,12 @@ body {
 main {
   position: relative;
   width: 82%;
-  height: 72vh;
+  height: 70vh;
   padding: 14vh 9%;
   background-color: white;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 48% 48% 4%;
+  grid-template-rows: 50% 50%;
 }
 
 .paragraph {
@@ -62,6 +62,7 @@ main {
   background-color: hsl(300, 24%, 96%);
   padding: 20px 30px;
   margin-bottom: 15px;
+  border-radius: 5px;
 }
 
 .r1 {
@@ -92,11 +93,71 @@ main {
 .reviews {
   grid-row: span 1;
   grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: hsl(300, 43%, 22%);
+  width: 340px;
+  height: 150px;
+  border-radius: 7px;
+  padding: 40px 30px;
+  color: white;
+  display: grid;
+  grid-template-columns: 60px 280px;
+  grid-template-rows: 20px 50px 100px;
+}
+
+.card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.card .name {
+  width: 280px;
+  height: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  display: inline-block;
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.card .badge {
+  width: 280px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 17px;
+  color: hsl(333, 80%, 67%);
+  display: inline-block;
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.card .review {
+  width: 340px;
+  text-align: justify;
+  line-height: 1.2;
+  font-weight: 400;
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.cr2 {
+  align-self: center;
+}
+
+.cr3 {
+  align-self: last baseline;
 }
 
 .attribution {
-  grid-row: span 1;
-  grid-column: span 2;
+  height: 2vh;
   font-size: 11px;
   text-align: center;
 }
